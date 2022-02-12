@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="main">
-      <img src="./images/stopwatch.png" alt="" />
+      <img class="clock" src="./images/stopwatch.png" alt="" />
       <div class="left">
         <div class="inputWrapper">
           <div class="forMin">
@@ -25,17 +25,27 @@
             <h3 for="sech">Sec</h3>
             <input id="sec" value="" autocomplete="off" />
           </div>
+          <div class="right">
+            <div class="forMin">
+              <h3 for="minh">Min</h3>
+              <div id="first"></div>
+            </div>
+            <div class="colonRight">:</div>
+            <div class="forSec">
+              <h3 for="sech">Sec</h3>
+              <div id="second"></div>
+            </div>
+          </div>
+        </div>
+        <div class="name">
+          <h3 class="set">Set Time</h3>
+          <h3 class="counter">Counter</h3>
         </div>
         <div class="buttons">
           <img class="but" src="./images/video-play-button.png" />
           <img class="reset" src="./images/reset.png" alt="" />
           <img src="./images/stop.png" alt="" class="stop" />
         </div>
-      </div>
-      <div class="right">
-        <div id="first"></div>
-        <div class="colonRight">:</div>
-        <div id="second"></div>
       </div>
     </div>
     <script src="./script.js"></script>
